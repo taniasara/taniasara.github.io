@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania Saraah | Graphic Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#030422',
+                        secondary: '#FFFFFF',
+                        accent1: '#FF6B6B',
+                        accent2: '#4ECDC4',
+                        accent3: '#FFD166',
+                        accent4: '#9381FF'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="public/img/favicon.ico" type="image/x-icon">
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #FF6B6B, #4ECDC4, #FFD166, #9381FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .floating-shape {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-shape-delayed {
+            animation: float 6s ease-in-out 2s infinite;
+        }
+
+        .floating-shape-delayed-more {
+            animation: float 6s ease-in-out 4s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-primary text-secondary font-sans">
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-primary/90 backdrop-blur-sm">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Halo<span class="text-accent1">.</span> Nia Disini</a>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="#graphic-design" class="hover:text-accent1 transition-colors">Graphic Design</a>
+                <a href="#video-editing" class="hover:text-accent2 transition-colors">Video Editing</a>
+                <a href="#illustration" class="hover:text-accent3 transition-colors">Illustration</a>
+                <a href="#uiux" class="hover:text-accent4 transition-colors">UI/UX</a>
+                <a href="#contact" class="hover:text-secondary transition-colors">Contact</a>
+            </div>
+
+            <button class="md:hidden text-2xl">☰</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <!-- Abstract background elements -->
+    <div class="absolute inset-0 z-0">
+        <!-- Gradient blobs -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-accent1/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-80 h-80 bg-accent2/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 right-1/4 w-40 h-40 bg-accent3/20 rounded-full blur-3xl"></div>
+
+        <!-- Decorative shapes -->
+        <div class="absolute top-1/4 right-1/3 w-32 h-32 border-4 border-accent1/30 rounded-full floating-shape"></div>
+        <div class="absolute bottom-1/4 left-1/4 w-24 h-24 bg-accent2/10 rounded-lg rotate-45 floating-shape-delayed"></div>
+        <div class="absolute top-1/3 left-1/3 w-16 h-16 bg-accent3/10 rounded-full floating-shape-delayed-more"></div>
+        <div class="absolute bottom-1/3 right-1/4 w-20 h-20 border-2 border-accent4/30 rounded-lg rotate-12 floating-shape"></div>
+    </div>
+
+    <div class="container mx-auto px-6 py-24 z-10 relative">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="mb-8 inline-block">
+                <span class="px-4 py-1 bg-white/10 rounded-full text-sm font-medium tracking-wider">Tania Sarah (Nia)</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                Transforming Ideas Into
+                <span class="relative">
+                        <span class="gradient-text">Visual Experiences</span>
+                        <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 10C50.6667 4 142.667 -2.66667 298 4.00001" stroke="url(#paint0_linear)"
+                                  stroke-width="3" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="2" y1="10" x2="298" y2="4.00001"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF6B6B"/>
+                                    <stop offset="0.333333" stop-color="#4ECDC4"/>
+                                    <stop offset="0.666667" stop-color="#FFD166"/>
+                                    <stop offset="1" stop-color="#9381FF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto">
+                Bringing your vision to life through graphic design, video editing, illustration, and UI/UX design.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-6">
+                <a href="#contact"
+                   class="px-8 py-4 bg-accent1 text-white font-medium rounded-full hover:bg-accent1/80 transition-colors">
+                    Get in Touch
+                </a>
+                <a href="#graphic-design"
+                   class="px-8 py-4 border border-white/30 rounded-full hover:bg-white/10 transition-colors">
+                    Explore My Work
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- Graphic Design Section -->
+<section id="graphic-design" class="py-24 relative">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-accent1/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-6 z-10 relative">
+        <div class="mb-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Graphic <span class="text-accent1">Design</span></h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Creating visual concepts that inspire, inform, and
+                captivate audiences through thoughtful design and creative problem-solving.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="project-card group relative overflow-hidden rounded-xl">
+                <img src="public/img/graph-1.jpeg" alt="Video Competition Flyer"
+                     class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="project-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-2xl font-bold mb-2">Video Competition Flyer</h3>
+                    <p class="text-gray-300 mb-4">Wajah Kotabaru Dulu dan Sekarang.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card group relative overflow-hidden rounded-xl">
+                <img src="public/img/graph-2.jpeg" alt="Pengumuman Hari Besar"
+                     class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="project-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-2xl font-bold mb-2">Documentation Announcement</h3>
+                    <p class="text-gray-300 mb-4">Library Closed on Public Holidays.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card group relative overflow-hidden rounded-xl">
+                <img src="public/img/graph-3.jpeg" alt="Documentation Announcement"
+                     class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="project-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-2xl font-bold mb-2">Documentation Poster</h3>
+                    <p class="text-gray-300 mb-4">Photo Documentation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Editing Section -->
+<section id="video-editing" class="py-24 relative">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-1/3 right-1/4 w-64 h-64 bg-accent2/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-6 z-10 relative">
+        <div class="mb-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Video <span class="text-accent2">Editing</span></h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Crafting compelling visual stories through expert
+                editing and creative direction.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Video Project 1 -->
+            <div class="project-card group relative overflow-hidden rounded-xl">
+                <img src="public/img/video-1.png" alt="Presentation Video"
+                     class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-20 h-20 bg-accent2 rounded-full flex items-center justify-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 20 20"
+                             fill="currentColor">
+                            <path fill-rule="evenodd"
+                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="project-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-2xl font-bold mb-2">Presentation Video</h3>
+                    <p class="text-gray-300 mb-4">Showcasing Kotabaru's tourism development plans</p>
+                    <a href="https://drive.google.com/file/d/1lycC9NtG0ThcqKZ1dtcmYvgjeiaYG2ib/view?usp=sharing"
+                       class="text-accent2 font-medium flex items-center" target="_blank">
+                        Watch Video
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20"
+                             fill="currentColor">
+                            <path fill-rule="evenodd"
+                                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Video Project 2 -->
+            <div class="project-card group relative overflow-hidden rounded-xl">
+                <img src="public/img/video-2.png" alt="Motion Graphics"
+                     class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-20 h-20 bg-accent2 rounded-full flex items-center justify-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 20 20"
+                             fill="currentColor">
+                            <path fill-rule="evenodd"
+                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="project-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-2xl font-bold mb-2">Introduction to the Kotabaru Library</h3>
+                    <p class="text-gray-300 mb-4">An introductory video about the Kotabaru Public Library.</p>
+                    <a href="#" class="text-accent2 font-medium flex items-center">
+                        Watch Video
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20"
+                             fill="currentColor">
+                            <path fill-rule="evenodd"
+                                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Illustration Section -->
+<section id="illustration" class="py-24 relative">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute bottom-1/4 left-1/3 w-64 h-64 bg-accent3/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-6 z-10 relative">
+        <div class="mb-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Illustration <span class="text-accent3">Art</span></h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Bringing ideas to life through digital and traditional
+                illustration with a unique artistic style.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Illustration 1 -->
+            <div class="project-card group relative overflow-hidden rounded-xl">
+                <img src="public/img/illust-1.gif" alt="Painting "
+                     class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="project-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold mb-2">Painting with Lighting</h3>
+
+                </div>
+            </div>
+
+            <!-- Illustration 2 -->
+            <div class="project-card group relative overflow-hidden rounded-xl">
+                <img src="public/img/illust-2.gif" alt="Animation"
+                     class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="project-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold mb-2">Animation</h3>
+                </div>
+            </div>
+
+            <!-- Illustration 3 -->
+            <div class="project-card group relative overflow-hidden rounded-xl">
+                <img src="public/img/illust-3.gif" alt="Graphical Art "
+                     class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="project-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold mb-2">Graphical Art</h3>
+                </div>
+            </div>
+
+            <!-- Illustration 4 -->
+            <div class="project-card group relative overflow-hidden rounded-xl">
+                <img src="public/img/illust-4.png" alt="Pixel Art"
+                     class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="project-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-xl font-bold mb-2">Pixel Art</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- UI/UX Section -->
+<section id="uiux" class="py-24 relative">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-1/2 right-1/3 w-64 h-64 bg-accent4/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-6 z-10 relative">
+        <div class="mb-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">UI/UX <span class="text-accent4">Design</span></h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Creating intuitive, user-centered digital experiences
+                that balance form and function.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- UI/UX Project 1 -->
+            <div class="bg-white/5 rounded-2xl overflow-hidden backdrop-blur-sm border border-white/10">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-4">Mobile App Design</h3>
+                    <p class="text-gray-300 mb-6">Complete UI/UX design for a craftsman apps.</p>
+                    <div class="flex space-x-4 mb-8">
+                        <span class="px-3 py-1 bg-accent4/20 text-accent4 rounded-full text-sm">User Research</span>
+                        <span class="px-3 py-1 bg-accent4/20 text-accent4 rounded-full text-sm">Wireframing</span>
+                        <span class="px-3 py-1 bg-accent4/20 text-accent4 rounded-full text-sm">UI Design</span>
+                    </div>
+                </div>
+                <div class="flex justify-center mb-4">
+                    <img src="public/img/ui-1.png" alt="Mobile App UI Design"
+                         class="w-1/4 h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- UI/UX Project 2 -->
+            <div class="bg-white/5 rounded-2xl overflow-hidden backdrop-blur-sm border border-white/10">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-4">Website Bappeda Official</h3>
+                    <p class="text-gray-300 mb-6">Complete redesign of an existing Bappeda website.</p>
+                    <div class="flex space-x-4 mb-8">
+                        <span class="px-3 py-1 bg-accent4/20 text-accent4 rounded-full text-sm">UI Redesign</span>
+                        <span class="px-3 py-1 bg-accent4/20 text-accent4 rounded-full text-sm">Prototyping</span>
+                        <span class="px-3 py-1 bg-accent4/20 text-accent4 rounded-full text-sm">Implementation</span>
+                    </div>
+                </div>
+                <img src="public/img/ui-2.png" alt="Bappeda Official"
+                     class="w-full h-64 object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-24 relative">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-accent1/20 to-accent4/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-6 z-10 relative">
+        <div class="mb-16 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Get in <span class="gradient-text">Touch</span></h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">Interested in working together? Connect with me through
+                any of these channels.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto bg-white/5 backdrop-blur-sm rounded-2xl p-10 border border-white/10">
+            <div class="flex flex-col items-center text-center">
+                <!-- Location -->
+                <div class="mb-8">
+                    <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Location</h3>
+                    <p class="text-gray-300">Kotabaru, Kalimantan Selatan, 72117</p>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-8">
+                    <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <a href="mailto:ainiyyah0731@gmail.com"
+                       class="text-accent1 hover:underline">ainiyyah0731@gmail.com</a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/aini-yyah-398b60209" target="_blank" rel="noopener noreferrer"
+                       class="flex flex-col items-center p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+                        <div class="w-12 h-12 bg-accent2/20 text-accent2 rounded-full flex items-center justify-center mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="h-6 w-6">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-medium mb-1">LinkedIn</h4>
+                        <p class="text-sm text-gray-400">aini-yyah-398b60209</p>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/taniasarah" target="_blank" rel="noopener noreferrer"
+                       class="flex flex-col items-center p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+                        <div class="w-12 h-12 bg-accent3/20 text-accent3 rounded-full flex items-center justify-center mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="h-6 w-6">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-medium mb-1">GitHub</h4>
+                        <p class="text-sm text-gray-400">taniasarah</p>
+                    </a>
+
+                    <!-- Portfolio -->
+                    <a href="https://bit.ly/Portfolio-Ainiyyah" target="_blank" rel="noopener noreferrer"
+                       class="flex flex-col items-center p-6 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+                        <div class="w-12 h-12 bg-accent4/20 text-accent4 rounded-full flex items-center justify-center mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="h-6 w-6">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-medium mb-1">Portfolio</h4>
+                        <p class="text-sm text-gray-400">View My Work</p>
+                    </a>
+                </div>
+
+                <!-- Divider -->
+                <div class="w-full h-px bg-white/10 my-10"></div>
+
+                <!-- Contact Card -->
+                <div class="w-full max-w-lg mx-auto p-6 bg-gradient-to-br from-accent1/10 to-accent4/10 rounded-xl border border-white/10">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Let's Work Together</h3>
+                        <p class="text-gray-300 mb-6">Ready to start a project? Reach out through any of the channels
+                            above.</p>
+                        <div class="flex space-x-4">
+                            <a href="mailto:ainiyyah0731@gmail.com"
+                               class="px-6 py-3 bg-accent1 text-white font-medium rounded-full hover:bg-accent1/80 transition-colors">
+                                Send Email
+                            </a>
+                            <a href="https://www.linkedin.com/in/aini-yyah-398b60209" target="_blank"
+                               rel="noopener noreferrer"
+                               class="px-6 py-3 border border-white/30 rounded-full hover:bg-white/10 transition-colors">
+                                Connect on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-12 border-t border-white/10">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <a href="#" class="text-2xl font-bold">Tania Sarah</a>
+                <p class="text-gray-400 mt-2">Bringing ideas to life through design.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#graphic-design" class="hover:text-accent1 transition-colors">Graphic Design</a>
+                <a href="#video-editing" class="hover:text-accent2 transition-colors">Video Editing</a>
+                <a href="#illustration" class="hover:text-accent3 transition-colors">Illustration</a>
+                <a href="#uiux" class="hover:text-accent4 transition-colors">UI/UX</a>
+                <a href="#contact" class="hover:text-secondary transition-colors">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="#"
+   class="fixed bottom-8 right-8 w-12 h-12 bg-accent1 rounded-full flex items-center justify-center shadow-lg hover:bg-accent1/80 transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+         stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+</a>
+</body>
+</html>
